@@ -116,59 +116,85 @@ export const CallToAction = () => {
             <div className="mt-8 lg:w-1/2 lg:mx-6">
               <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-gray-50 shadow-2xl rounded-xl lg:max-w-xl">
                 <h1 className="text-2xl font-semibold text-gray-800">
-                  Let’s talk
+                  Enquire more about us !
                 </h1>
 
-                <form className="mt-6">
+                <form className="mt-4">
                   <div className="flex-1">
-                    <label className="block mb-2 text-sm text-gray-600">
-                      Full Name
-                    </label>
+                    <label className="block mb-1 text-sm text-gray-600">Full Name</label>
                     <input
                       type="text"
-                      placeholder="Name"
-                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      placeholder="Your Name"
+                      className="block w-full px-3 py-2 mt-1 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
-                  <div className="flex-1 mt-6">
-                    <label className="block mb-2 text-sm text-gray-600">
-                      Email address
-                    </label>
+                  <div className="flex-1 mt-4">
+                    <label className="block mb-1 text-sm text-gray-600">Email address</label>
                     <input
-                      type="email"
-                      placeholder="Email-id"
-                      className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      type="Email"
+                      placeholder="Your Email-id"
+                      className="block w-full px-3 py-2 mt-1 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
-                  
-                  <div className="flex-1 mt-6">
-                    <label className="block mb-2 text-sm text-gray-600">
-                      Course
-                    </label>
-                    <select id="course" name="course" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40">
-                      <option>Advanced AI and Machine Learning</option>
-                      <option>Biotechnology and Bioinformatics</option>
-                      <option>Cybersecurity and Data Protection</option>
+
+                  <div className="flex-1 mt-4">
+                    <label className="block mb-1 text-sm text-gray-600">Phone Number</label>
+                    <input
+                      type="tel"
+                      placeholder="Your Phone No."
+                      className="block w-full px-3 py-2 mt-1 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                    />
+                  </div>
+
+                  <div className="flex-1 mt-4">
+                    <label className="block mb-1 text-sm text-gray-600">Course</label>
+                    <select
+                      id="course"
+                      name="course"
+                      className="block w-full px-3 py-2 mt-1 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                    >
+                      <option>AI & ML</option>
+                      <option>Electric vehicle</option>
+                      <option>Data Science and Machine Learning</option>
+                      <option>Cybersecurity</option>
+                      <option>Cloud Computing</option>
+                      <option>Network Design</option>
+                      <option>Artificial Intelligence</option>
+                      <option>Deep Learning</option>
+                      <option>Internet of Things (IoT)</option>
+                      <option>Blockchain Technology</option>
+                      <option>Big Data Analytics</option>
+                      <option>Embedded Systems Design</option>
                       <option>Robotics and Automation</option>
+                      <option>Advanced Programming Languages</option>
+                      <option>Systems Analysis</option>
+                      <option>Vaccine Technology</option>
+                      <option>Bioinformatics</option>
+                      <option>Cancer Biology</option>
+                      <option>Neurobiology</option>
+                      <option>Personalized Medicine</option>
+                      <option>Medical Microbiology</option>
+                      <option>Biotechnology Innovations</option>
+                      <option>Environmental Genomics</option>
+                      <option>Forensic Science</option>
+                      <option>Molecular Biology</option>
                     </select>
                   </div>
 
-                      
-                  <div className="w-full mt-6">
-                    <label className="block mb-2 text-sm text-gray-600">
-                      Message
-                    </label>
+                  <div className="w-full mt-4">
+                    <label className="block mb-1 text-sm text-gray-600">Message</label>
                     <textarea
-                      className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                      placeholder="Message"
+                      className="block w-full h-24 px-3 py-2 mt-1 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      placeholder="Your message"
                     ></textarea>
                   </div>
 
-                  <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:ring focus:ring-blue-300 focus:ring-opacity-50 focus:outline-none">
+                  <button className="w-full px-4 py-2 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:ring focus:ring-blue-300 focus:ring-opacity-50 focus:outline-none">
                     get in touch
                   </button>
                 </form>
+
               </div>
             </div>
           </div>

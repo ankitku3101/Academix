@@ -4,6 +4,7 @@ import cogImage from '@/assets/cog.png'
 import cylinder from '@/assets/cylinder.png'
 import noodleImage from '@/assets/noodle.png'
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Link from 'next/link'
 import { useRef } from 'react'
 
 export const Hero = () => {
@@ -15,7 +16,7 @@ export const Hero = () => {
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
    
   return (
-    <section ref={heroRef} className='pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] overflow-x-clip'>
+    <section id='hero' ref={heroRef} className='pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] overflow-x-clip'>
       <div className="container">
         <div className='md:flex items-center'>
           <div className='md:w-[478px]'>
@@ -34,11 +35,7 @@ export const Hero = () => {
               aspirations.
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary">Get Started</button>
-              <button className="btn btn-text gap-1">
-                <span>Learn More</span>
-                <ArrowIcon className='h-5 w-5'/>
-              </button>
+              <Link href={'#contact'}><button className="btn btn-primary">Get Started</button></Link>
             </div>
           </div>
           <div className='mt-20 md:mt-0 md:h-[648px] md:flex-1 relative'>
