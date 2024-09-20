@@ -57,12 +57,12 @@ const ShippingDeliveryPolicy = () => {
             <li>Items can be returned or exchanged within 30 days of receipt, provided they are unused, in their original packaging, and accompanied by the original receipt.</li>
             <li>Customized or personalized items are not eligible for returns or exchanges unless defective.</li>
             <li>Return shipping costs are the responsibility of the customer unless the return is due to a defective item or our error.</li>
-            <li>To initiate a return or exchange, contact our Customer Service team at <a href="mailto:support@academix.net" className="text-blue-600">support@academix.net</a> with your order details and the reason for the return.</li>
+            <li>To initiate a return or exchange, contact our Customer Service team at <a href="mailto:support@academix.net.in" className="text-blue-600">support@academix.net.in</a> with your order details and the reason for the return.</li>
           </ul>
 
           <h2 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Customer Support</h2>
           <p className="text-gray-600 mb-4">
-            Our Customer Service team is available to assist you with any questions or concerns regarding your order. We are available Monday through Friday, from 9:00 AM to 6:00 PM (IST). You can reach us via email at <a href="mailto:support@academix.net" className="text-blue-600">support@academix.net</a> or by calling our helpline at <strong>+91 1234-567890</strong>.
+            Our Customer Service team is available to assist you with any questions or concerns regarding your order. We are available Monday through Friday, from 9:00 AM to 6:00 PM (IST). You can reach us via email at <a href="mailto:support@academix.net" className="text-blue-600">support@academix.net.in</a> or by calling our helpline at <strong>+91 82874 01705</strong>.
           </p>
 
           <p className="text-gray-600 mb-4">

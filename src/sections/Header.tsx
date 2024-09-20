@@ -22,6 +22,9 @@ export const Header = () => {
               <Link href="/#contact">Contact</Link>
               <Link href="/">Home</Link>
             </nav>
+            <div className='bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text font-semibold'>
+              Call Us +91 82874 01705
+            </div>
           </div>
         </div>
       </div>

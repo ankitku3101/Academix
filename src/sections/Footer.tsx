@@ -20,7 +20,7 @@ export const Footer = () => {
                 className="h-8 me-3"
                 alt="Academix Logo"
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap">
+              <span className="self-center text-2xl font-semibold bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
                 ACADEMIX
               </span>
             </a>

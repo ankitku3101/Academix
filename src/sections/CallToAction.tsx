@@ -86,7 +86,7 @@ export const CallToAction = () => {
                   </svg>
 
                   <span className="mx-2 text-gray-700 truncate w-72">
-                    (257) 563-7401
+                    +91 82874 01705
                   </span>
                 </p>
 
