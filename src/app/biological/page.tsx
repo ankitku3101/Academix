@@ -10,13 +10,13 @@ export default function BiologicalCourses() {
         <Header />
         <div className='container'>
           <div className='flex flex-col items-center p-4'>
-            <h1 className='text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6 pb-2'>
+            <h1 className='text-center text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6 pb-2'>
               Biological Courses
             </h1>
-            <p className="text-xl text-[#010D3E] tracking-tight mt-6">
+            <p className="text-xl text-[#010D3E] tracking-tight mt-6 text-center">
               Here's a list of all the courses that Academix offers:
             </p>
-            <ul className="grid grid-cols-3 pt-4">
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-4">
               <li className='tag m-2 hover:bg-black hover:text-white'>Systems Analysis</li>
               <li className='tag m-2 hover:bg-black hover:text-white'>Vaccine Technology</li>
               <li className='tag m-2 hover:bg-black hover:text-white'>Bioinformatics</li>

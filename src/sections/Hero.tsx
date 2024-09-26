@@ -36,6 +36,10 @@ export const Hero = () => {
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <Link href={'#contact'}><button className="btn btn-primary">Get Started</button></Link>
+              <a href="tel:+918287401705" className="flex items-center btn btn-text hover:btn-primary gap-1 md:hidden">
+                <span>Call Us</span>
+                <ArrowIcon className="h-5 w-5" />
+              </a>
             </div>
           </div>
           <div className='mt-20 md:mt-0 md:h-[648px] md:flex-1 relative'>
