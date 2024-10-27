@@ -1,7 +1,8 @@
 "use client"
 
 import Image from "next/image";
-import productImage from '@/assets/product-image.png'
+import test1 from '@/assets/test1.jpg'
+import test2 from '@/assets/test2.jpg'
 import tubeImage from '@/assets/tube.png'
 import pyramidImage from '@/assets/pyramid.png'
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -26,28 +27,25 @@ export const ProductShowcase = () => {
             Our services are designed for individuals pursuing higher education or professional development.
           </p>
         </div>
-        <div className="relative">
-          <Image src={productImage} alt="image" className="mt-10"/>     
-          <motion.img
-            src={pyramidImage.src} 
-            alt="pyramid" 
-            className="hidden md:block absolute -right-36 -top-32" 
-            height={262} 
-            width={262}
-            style={{
-              translateY: translateY
-            }} 
-          />
-          <motion.img 
-            src={tubeImage.src} 
-            alt="tube" 
-            className="hidden md:block absolute bottom-24 -left-36" 
-            height={262} 
-            width={262} 
-            style={{
-              translateY: translateY
-            }}
-          />
+        <div className="max-w-5xl max-md:max-w-xl mx-auto font-[sans-serif] my-4">
+          <div className="mt-16">
+            <div className="grid md:grid-cols-2 items-center gap-16">
+              <div>
+                <Image src={test1} width={626} height={417} alt="demo" className="w-full object-contain rounded-md shadow-[0_14px_40px_-11px_rgba(93,96,127,0.2)]" />
+              </div>
+              <div>
+                <h3 className="text-gray-800 text-xl font-bold mb-4">Customized Learning Schedules</h3>
+                <p className="text-gray-600 text-sm">At Academix, we believe that learning should fit seamlessly into your life, not the other way around. With our flexible scheduling options, you can plan your study hours around your needs and budget. Whether you’re balancing work, family, or other commitments, Academix makes it easy to set your own pace and keep learning accessible.</p>
+              </div>
+              <div className="max-md:order-1">
+                <h3 className="text-gray-800 text-xl font-bold mb-4">Exceptional Course Quality, Tailored for You</h3>
+                <p className="text-gray-600 text-sm">Academix is dedicated to delivering top-notch education, whether you’re learning online or in-person. Our courses are developed by industry experts, focusing on practical skills and deep knowledge that prepare you for real-world challenges. With Academix, you’ll always experience high standards, interactive learning, and reliable support on your journey to success.</p>
+              </div>
+              <div>
+              <Image src={test2} width={626} height={417} alt="demo" className="w-full object-contain rounded-md shadow-xl" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

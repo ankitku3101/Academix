@@ -14,22 +14,20 @@ export const Footer = () => {
       <div className="container mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="/#hero" className="flex items-center">
-              <Image
-                src={logo}
-                height={40}
-                width={50}
-                className="h-8 me-3"
-                alt="Academix Logo"
-              />
+            <a href="/#hero" className="flex flex-col items-start">
               <span
-                className={`${Alfa.className} self-center text-2xl font-semibold bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text`}
+                className={`${Alfa.className} self-start text-2xl font-semibold bg-gradient-to-b from-white to-gray-400 text-transparent bg-clip-text`}
               >
                 ACADEMIX
               </span>
             </a>
+              <div className="hidden lg:block mt-8">
+                <p className="text-gray-400 text-sm">
+                  Join us now to access top-tier educational resources <br/> and training programs in future technologies, designed for <br/> students and professionals seeking to advance their skills.
+                </p>
+              </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-2 md:gap-0 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-2 md:gap-0 sm:grid-cols-3 lg:grid-cols-4">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Links
@@ -63,12 +61,12 @@ export const Footer = () => {
               </h2>
               <ul className="text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline text-white">
+                  <a href="https://www.facebook.com/profile.php?id=61562958069922" className="hover:underline text-white">
                     Facebook
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline text-white">
+                  <a href="https://www.instagram.com/__academix/" className="hover:underline text-white">
                     Instagram
                   </a>
                 </li>
@@ -93,6 +91,33 @@ export const Footer = () => {
                   <Link href={'/RefundCancellationPolicy'} className="hover:underline text-white">
                     Refund & Cancellation
                   </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="hidden lg:block ml-14">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+                Suggested
+              </h2>
+              <ul className="text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a href="/#ai-ml" className="hover:underline text-white">
+                    AI ML
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="/#robotics" className="hover:underline text-white">
+                    Robotics
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="/#cybersec" className="hover:underline text-white">
+                    CyberSec
+                  </a>
+                </li>
+                <li>
+                  <a href="/#webdev" className="hover:underline text-white">
+                    Web Dev
+                  </a>
                 </li>
               </ul>
             </div>

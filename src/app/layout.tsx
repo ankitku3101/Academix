@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
-import { Header } from "@/sections/Header";
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 

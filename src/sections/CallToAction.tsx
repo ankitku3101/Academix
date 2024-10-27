@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import cog from '@/assets/cogBG.jpg'
 import starImage from '@/assets/star.png'
 import springImage from '@/assets/spring.png'
 import supportImage from '@/assets/support.jpg'
@@ -16,36 +17,30 @@ export const CallToAction = () => {
   })
   const translateY = useTransform(scrollYProgress, [0,1], [150, -150]);
   return (
-    <section ref={sectionRef} id="contact" className="bg-gradient-to-b from-[#D2DCFF] to-white py-10 overflow-x-clip">
+    <section
+  ref={sectionRef}
+  id="contact"
+  className="py-10 overflow-x-clip"
+  style={{
+    backgroundImage: `url(${cog.src})`,
+    backgroundAttachment: 'fixed',
+    backgroundSize: 'cover', // Ensures the image covers the entire section without repeating or stretching
+    backgroundPosition: 'center', // Centers the image
+  }}
+>
       <div className="container relative">
-          <motion.img 
-            src={starImage.src} 
-            alt="star" 
-            width={360} 
-            className="absolute -left-[350px] -top-[137px]" 
-            style={{
-              translateY
-            }}
-          />
-          <motion.img 
-            src={springImage.src} 
-            alt="star" 
-            width={360} 
-            className="absolute -right-[331px] -top-[19px]" 
-            style={{
-              translateY
-            }}
-          />
-        <div className="px-6 py-12 mx-auto">
+        <div className="px-6 py-12 mx-auto ">
           <div className="lg:flex lg:items-center lg:-mx-6">
-            <div className="lg:w-1/2 lg:mx-6 ">
-              <div className="pt-12 mb-4 flex flex-col text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-5xl text-center lg:text-left">
-                <div className="text-transparent bg-clip-text bg-gradient-to-b to-blue-600 from-indigo-800 mb-2">
-                  Got Questions?<br/>Lets talk.
+            <div className="lg:w-1/2 lg:mx-6 p-8 h-full w-full bg-white-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 shadow-2xl">
+              <div className="mb-4 flex flex-col text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-5xl text-center lg:text-left">
+                <div className="tracking-tighter text-[#010D3E] mb-2">
+                  Need Support?
                 </div>
+                <p className="text-left text-[19px] leading-[30-px] tracking-tight text-[#010D3E]">
+                  Contact our team regarding any doubt.
+                </p>
               </div>
               <div className="flex-none lg:block md:flex md:justify-center md:items-center">
-                <Image className="" src={supportImage} width={300} height={300} alt="xyz" />
 
                 <div className="pl-6 lg:pl-0 mt-6 space-y-6 md:mt-8">
                   <p className="flex items-start -mx-2">
@@ -130,7 +125,7 @@ export const CallToAction = () => {
                     <label className="block mb-1 text-sm text-gray-600">Full Name</label>
                     <input
                       type="text"
-                      placeholder="Your Name"
+                      placeholder="Name"
                       className="block w-full px-3 py-2 mt-1 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
@@ -139,7 +134,7 @@ export const CallToAction = () => {
                     <label className="block mb-1 text-sm text-gray-600">Email address</label>
                     <input
                       type="Email"
-                      placeholder="Your Email-id"
+                      placeholder="Email-id"
                       className="block w-full px-3 py-2 mt-1 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
@@ -148,7 +143,7 @@ export const CallToAction = () => {
                     <label className="block mb-1 text-sm text-gray-600">Phone Number</label>
                     <input
                       type="tel"
-                      placeholder="Your Phone No."
+                      placeholder="Phone No."
                       className="block w-full px-3 py-2 mt-1 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>

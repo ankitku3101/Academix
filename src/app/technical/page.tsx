@@ -23,13 +23,13 @@ export default function TechnicalCourses() {
                         <li className='tag m-2 hover:bg-black hover:text-white'>Data Science and Machine Learning</li>
                         <li className='tag m-2 hover:bg-black hover:text-white'>Cybersecurity</li>
                         <li className='tag m-2 hover:bg-black hover:text-white'>Cloud Computing</li>
-                        <li className='tag m-2 hover:bg-black hover:text-white'>Network Design</li>
-                        <li className='tag m-2 hover:bg-black hover:text-white'>Artificial Intelligence</li>
+                        <li className='tag m-2 hover:bg-black hover:text-white'>Power BI</li>
+                        <li className='tag m-2 hover:bg-black hover:text-white'>Ethical Hacking</li>
                         <li className='tag m-2 hover:bg-black hover:text-white'>Deep Learning</li>
                         <li className='tag m-2 hover:bg-black hover:text-white'>Internet of Things (IoT)</li>
                         <li className='tag m-2 hover:bg-black hover:text-white'>Blockchain Technology</li>
                         <li className='tag m-2 hover:bg-black hover:text-white'>Big Data Analytics</li>
-                        <li className='tag m-2 hover:bg-black hover:text-white'>Embedded Systems Design</li>
+                        <li className='tag m-2 hover:bg-black hover:text-white'>Full Stack Web Development</li>
                         <li className='tag m-2 hover:bg-black hover:text-white'>Robotics and Automation</li>
                         <li className='tag m-2 hover:bg-black hover:text-white'>Advanced Programming Languages</li>
                         <li className='tag m-2 hover:bg-black hover:text-white'>Systems Analysis</li>

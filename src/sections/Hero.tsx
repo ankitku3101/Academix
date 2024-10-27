@@ -1,11 +1,11 @@
 'use client'
 import ArrowIcon from '@/assets/arrow-right.svg'
-import cogImage from '@/assets/cog.png'
-import cylinder from '@/assets/cylinder.png'
-import noodleImage from '@/assets/noodle.png'
+import vector from '@/assets/vector.png'
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 export const Hero = () => {
   const heroRef = useRef(null);
@@ -14,9 +14,9 @@ export const Hero = () => {
     offset: ["start end", "end start"], 
   });
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
-   
+
   return (
-    <section id='hero' ref={heroRef} className='pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] overflow-x-clip'>
+    <section ref={heroRef} className='pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#558df5,#EAEEFE_100%)] overflow-x-clip'>
       <div className="container">
         <div className='md:flex items-center'>
           <div className='md:w-[478px]'>
@@ -42,40 +42,9 @@ export const Hero = () => {
               </a>
             </div>
           </div>
-          <div className='mt-20 md:mt-0 md:h-[648px] md:flex-1 relative'>
-            <motion.img 
-              src={cogImage.src} 
-              alt='cog image' 
-              className='md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0'
-              animate={{
-                translateY: [-30,30],
-              }}
-              transition={{
-                repeat: Infinity,
-                repeatType: 'mirror',
-                duration: 3,
-                ease: 'easeInOut'
-              }}
-            />
-            <motion.img 
-              src={cylinder.src} 
-              alt='cylinder' 
-              className='hidden md:block -top-8 -left-32 md:absolute'
-              width={220} 
-              height={220} 
-              style={{
-                translateY: translateY,
-              }}
-            />
-            <motion.img
-              src={noodleImage.src}
-              alt='noodle' 
-              className='hidden lg:block absolute top-[524px] left-[448px] rotate-[30deg]' 
-              width={220} 
-              style={{
-                rotate: 30,
-                translateY: translateY,
-              }}
+          <div className='mt-20 md:mt-0 md:h-[648px] md:flex-1 relative flex justify-center items-center'>
+            <Image src={vector} width={540} height={540} alt='hero vector' 
+              className='flex justify-center items-center pb-24 ml-10'
             />
           </div>
         </div>

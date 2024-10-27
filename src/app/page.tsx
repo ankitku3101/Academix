@@ -5,6 +5,7 @@ import { Header } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
 import { LogoTicker } from "@/sections/LogoTicker";
 import { ProductShowcase } from "@/sections/ProductShowcase";
+import { Testimonials } from "@/sections/Testimonials";
 import { WhyUs } from "@/sections/WhyUs";
 
 
@@ -16,6 +17,7 @@ export default function Home() {
     <ProductShowcase />
     <WhyUs />
     <Courses />
+    <Testimonials />
     <CallToAction />
     <Footer />
   </>
