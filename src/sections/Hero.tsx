@@ -44,7 +44,7 @@ export const Hero = () => {
           </div>
           <div className='mt-20 md:mt-0 md:h-[648px] md:flex-1 relative flex justify-center items-center'>
             <Image src={vector} width={540} height={540} alt='hero vector' 
-              className='flex justify-center items-center pb-24 ml-10'
+              className='md:justify-center md:items-center md:pb-24 md:ml-10'
             />
           </div>
         </div>

@@ -18,26 +18,23 @@ export const CallToAction = () => {
   const translateY = useTransform(scrollYProgress, [0,1], [150, -150]);
   return (
     <section
-  ref={sectionRef}
-  id="contact"
-  className="py-10 overflow-x-clip"
-  style={{
-    backgroundImage: `url(${cog.src})`,
-    backgroundAttachment: 'fixed',
-    backgroundSize: 'cover', // Ensures the image covers the entire section without repeating or stretching
-    backgroundPosition: 'center', // Centers the image
-  }}
->
+      ref={sectionRef}
+      id="contact"
+      className="py-10 overflow-x-clip bg-cover bg-fixed sm:bg-left bg-center"
+      style={{
+        backgroundImage: `url(${cog.src})`,
+      }}
+    >
       <div className="container relative">
         <div className="px-6 py-12 mx-auto ">
           <div className="lg:flex lg:items-center lg:-mx-6">
             <div className="lg:w-1/2 lg:mx-6 p-8 h-full w-full bg-white-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 shadow-2xl">
-              <div className="mb-4 flex flex-col text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-5xl text-center lg:text-left">
-                <div className="tracking-tighter text-[#010D3E] mb-2">
-                  Need Support?
+              <div className="mb-4 flex flex-col text-4xl text-gray-900 md:text-5xl lg:text-5xl text-center lg:text-left">
+                <div className="tracking-tighter text-[#010D3E] font-extrabold mb-2">
+                  Got Questions?
                 </div>
-                <p className="text-left text-[19px] leading-[30-px] tracking-tight text-[#010D3E]">
-                  Contact our team regarding any doubt.
+                <p className="text-left text-[19px] tracking-tight text-[#010D3E] leading-none">
+                  From course recommendations to platform tips, we’re here to clear up the confusion. Just send a message, and let us get you back on track to learning success!
                 </p>
               </div>
               <div className="flex-none lg:block md:flex md:justify-center md:items-center">
