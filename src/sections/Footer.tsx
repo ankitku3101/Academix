@@ -101,17 +101,17 @@ export const Footer = () => {
               <ul className="text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="/#ai-ml" className="hover:underline text-white">
-                    AI ML
+                    AI & ML
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="/#robotics" className="hover:underline text-white">
-                    Robotics
+                    Agriculture
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="/#cybersec" className="hover:underline text-white">
-                    CyberSec
+                    Cancer Biology
                   </a>
                 </li>
                 <li>
