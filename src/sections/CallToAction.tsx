@@ -31,10 +31,10 @@ export const CallToAction = () => {
             <div className="lg:w-1/2 lg:mx-6 p-8 h-full w-full bg-white-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 shadow-2xl">
               <div className="mb-4 flex flex-col text-4xl text-gray-900 md:text-5xl lg:text-5xl text-center lg:text-left">
                 <div className="tracking-tighter text-[#010D3E] font-extrabold mb-2">
-                  Got Questions?
+                  Need Assistance?
                 </div>
                 <p className="text-left text-[19px] tracking-tight text-[#010D3E] leading-none">
-                  From course recommendations to platform tips, we’re here to clear up the confusion. Just send a message, and let us get you back on track to learning success!
+                  We’re here to help you out.
                 </p>
               </div>
               <div className="flex-none lg:block md:flex md:justify-center md:items-center">
@@ -62,7 +62,7 @@ export const CallToAction = () => {
                     </svg>
 
                     <span className="mx-2 text-gray-700 truncate w-72">
-                      New Delhi - 110000
+                      New Delhi
                     </span>
                   </p>
 
@@ -104,7 +104,7 @@ export const CallToAction = () => {
                     </svg>
 
                     <span className="mx-2 text-gray-700 truncate w-72">
-                      academix887@gmail.com
+                      support@academix.net.in
                     </span>
                   </p>
                 </div>
